@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #b9d5ea;
+  --accent-color: #454c97;
+
+  --font-color: #a0819b;
+  --secondary-font-color: #8a4843;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-computer {
+  background-color: var(--primary-color);
+  width: 90dvw;
+  height: 4rem;
+  border-radius: 999999px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-header {
+  height: 1.25rem;
+}
+
+.header-left {
+  padding-left: 2rem;
+  flex: 1;
+}
+
+.header-left a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.65rem;
+
+  letter-spacing: 0em;
+}
+
+.header-middle {
+  flex: 2;
+  display: flex;
+  gap: 3dvw;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.link-header {
+  color: #ffffff;
+  padding: 0.4rem;
+}
+
+.link-header.active {
+  color: var(--accent-color);
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.header-right {
+  flex: 0.75;
+
+  padding-right: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.header-right img {
+  width: 1.35rem;
+}
+
+.notification-active {
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.notification-active::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+
+  background-color: var(--accent-color);
+
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 999999px;
+  position: absolute;
+  top: -2px;
+  right: -7px;
+}
